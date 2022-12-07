@@ -49,7 +49,7 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < 6; i++)
         {
-            if (place[i].GetChildCount() != 0) Destroy(place[i].GetChild(0).gameObject);
+            if (place[i].childCount != 0) Destroy(place[i].GetChild(0).gameObject);
         }
         for(int i=0; i < stuffName.Count; i++)
         {
@@ -76,7 +76,7 @@ public class Inventory : MonoBehaviour
             if (stuffName[holdNumber - 1] == "cookie") Instantiate(cookie, item.transform);
             if (stuffName[holdNumber - 1] == "water") Instantiate(water, item.transform);
             if (stuffName[holdNumber - 1] == "pie") Instantiate(pie, item.transform);
-            // ¾ÆÀÌÅÛ µé±â
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 
             holdItem = stuffName[holdNumber - 1];
             hand.SetActive(true);
@@ -86,7 +86,7 @@ public class Inventory : MonoBehaviour
     }
     void resetHand()
     {
-        if (item.transform.GetChildCount() != 0) Destroy(item.transform.GetChild(0).gameObject);
+        if (item.transform.childCount != 0) Destroy(item.transform.GetChild(0).gameObject);
         hand.SetActive(false);
     }
 
