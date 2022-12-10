@@ -9,6 +9,7 @@ TagManager:
   - Cookie
   - Water
   - Pie
+  - Door
   layers:
   - Default
   - TransparentFX
